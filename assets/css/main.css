@@ -228,9 +228,9 @@ body,
 input,
 select,
 textarea {
-  color: #ffffff;
+  color: #580262;
   font-family: "Source Sans Pro", sans-serif;
-  font-weight: 300;
+  font-weight: 600;
   font-size: 1rem;
   line-height: 1.65;
 }
@@ -282,7 +282,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #3e363f;
+  color: #580262;
   font-weight: 600;
   line-height: 1.5;
   margin: 0 0 1rem 0;
@@ -1312,8 +1312,8 @@ button {
     filter 0.325s ease-in-out;
 
   /* --- MODIFICA QUI --- */
-  background-image: linear-gradient(135deg, #e9e3db 50%, #b49a75 65%);
-  background-color: #e9e3db; /* Fallback */
+  background-image: linear-gradient(135deg, #e8ddcf 50%, #b49a75 60%);
+  background-color: #e8ddcf; /* Fallback */
 
   z-index: 1;
 }
@@ -1543,11 +1543,31 @@ body.is-preload #bg:before {
   min-width: 7.25rem;
   height: 2.75rem;
   line-height: 2.75rem;
-  padding: 0 1.25rem 0 1.45rem;
+  padding: 0; /* Portiamo il padding a 0 per avere il controllo totale */
+  text-align: center; /* Centriamo il testo */
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   font-size: 0.7rem;
   border-bottom: 0;
+  position: relative;
+  box-sizing: border-box; /* Forza il calcolo corretto delle dimensioni */
+}
+/* Crea la linea (nascosta di base) */
+#header nav ul li a:after {
+  content: "";
+  position: absolute;
+  bottom: 0; /* Attaccata al bordo inferiore */
+  left: 50%; /* Parte dal centro */
+  width: 0; /* Larghezza zero */
+  height: 4px; /* Spessore linea */
+  background-color: #580262; /* Il tuo colore */
+  transition: all 0.3s ease-in-out; /* Velocità movimento */
+}
+
+/* Fa apparire la linea al passaggio del mouse */
+#header nav ul li a:hover:after {
+  width: 100%; /* Si allunga su tutto il tasto */
+  left: 0; /* Si sposta a sinistra per coprire tutto */
 }
 
 #header nav ul li a:hover {
@@ -1730,7 +1750,7 @@ body.is-preload #header .content .inner {
   position: relative;
   width: 40rem;
   max-width: 100%;
-  background-color: rgba(27, 31, 34, 0.85);
+  background-color: transparent;
   border-radius: 4px;
   opacity: 0;
   max-height: 80vh; /* L'articolo non può superare l'80% dell'altezza dello schermo */
@@ -1874,6 +1894,6 @@ body.is-preload #footer {
   font-size: 1.7rem;
   font-weight: bold;
   letter-spacing: 0.3rem;
-  color: rgba(255, 255, 255, 0.8); /* Bianco leggermente trasparente */
+  color: #580262;
   text-transform: uppercase;
 }
