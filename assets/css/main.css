@@ -1466,6 +1466,7 @@ body.is-preload #bg:before {
   line-height: 5.5rem;
   border: solid 1px #580262;
   border-radius: 100%;
+  background: linear-gradient(315deg, #e8ddcf 40%, #b49a75 60%);
 }
 
 #header .logo .icon:before {
@@ -1532,6 +1533,7 @@ body.is-preload #bg:before {
 #header nav ul li {
   padding-left: 0;
   border-left: solid 1px #580262;
+  background: linear-gradient(315deg, #e8ddcf 40%, #b49a75 60%);
 }
 
 #header nav ul li:first-child {
