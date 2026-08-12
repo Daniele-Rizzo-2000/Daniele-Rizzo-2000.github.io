@@ -112,6 +112,8 @@ section {
 
 body {
   line-height: 1;
+  -webkit-text-size-adjust: none;
+  background: #1b1f22;
 }
 
 ol,
@@ -137,10 +139,6 @@ table {
   border-spacing: 0;
 }
 
-body {
-  -webkit-text-size-adjust: none;
-}
-
 mark {
   background-color: transparent;
   color: inherit;
@@ -152,7 +150,6 @@ input::-moz-focus-inner {
 }
 
 input,
-select,
 textarea {
   -moz-appearance: none;
   -webkit-appearance: none;
@@ -175,16 +172,13 @@ textarea {
 
 html {
   box-sizing: border-box;
+  font-size: 16pt;
 }
 
 *,
 *:before,
 *:after {
   box-sizing: inherit;
-}
-
-body {
-  background: #1b1f22;
 }
 
 body.is-preload *,
@@ -201,10 +195,6 @@ body.is-preload *:after {
 }
 
 /* Type */
-
-html {
-  font-size: 16pt;
-}
 
 @media screen and (max-width: 1680px) {
   html {
@@ -226,9 +216,8 @@ html {
 
 body,
 input,
-select,
 textarea {
-  color: #580262;
+  color: #2c3e50;
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 600;
   font-size: 1rem;
@@ -282,7 +271,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #580262;
+  color: #2c3e50;
   font-weight: 600;
   line-height: 1.5;
   margin: 0 0 1rem 0;
@@ -306,7 +295,7 @@ h3.major,
 h4.major,
 h5.major,
 h6.major {
-  border-bottom: solid 3px #580262;
+  border-bottom: solid 3px #2c3e50;
   width: -moz-max-content;
   width: -webkit-max-content;
   width: -ms-max-content;
@@ -320,25 +309,20 @@ h1 {
   line-height: 1.3;
   letter-spacing: 0.3rem;
 }
-
 h2 {
   font-size: 1.5rem;
   line-height: 1.4;
   letter-spacing: 0.2rem;
 }
-
 h3 {
   font-size: 1rem;
 }
-
 h4 {
   font-size: 0.8rem;
 }
-
 h5 {
   font-size: 0.7rem;
 }
-
 h6 {
   font-size: 0.6rem;
 }
@@ -348,7 +332,6 @@ h6 {
     font-size: 1.75rem;
     line-height: 1.4;
   }
-
   h2 {
     font-size: 1.25em;
     line-height: 1.5;
@@ -360,41 +343,10 @@ sub {
   position: relative;
   top: 0.5rem;
 }
-
 sup {
   font-size: 0.8rem;
   position: relative;
   top: -0.5rem;
-}
-
-blockquote {
-  border-left: solid 4px #ffffff;
-  font-style: italic;
-  margin: 0 0 2rem 0;
-  padding: 0.5rem 0 0.5rem 2rem;
-}
-
-code {
-  background: rgba(255, 255, 255, 0.075);
-  border-radius: 4px;
-  font-family: "Courier New", monospace;
-  font-size: 0.9rem;
-  margin: 0 0.25rem;
-  padding: 0.25rem 0.65rem;
-}
-
-pre {
-  -webkit-overflow-scrolling: touch;
-  font-family: "Courier New", monospace;
-  font-size: 0.9rem;
-  margin: 0 0 2rem 0;
-}
-
-pre code {
-  display: block;
-  line-height: 1.75;
-  padding: 1rem 1.5rem;
-  overflow-x: auto;
 }
 
 hr {
@@ -406,11 +358,9 @@ hr {
 .align-left {
   text-align: left;
 }
-
 .align-center {
   text-align: center;
 }
-
 .align-right {
   text-align: right;
 }
@@ -420,7 +370,6 @@ hr {
 form {
   margin: 0 0 2rem 0;
 }
-
 form > :last-child {
   margin-bottom: 0;
 }
@@ -454,11 +403,9 @@ form > .fields > .field {
 form > .fields > .field.half {
   width: calc(50% - 0.75rem);
 }
-
 form > .fields > .field.third {
   width: calc(100% / 3 - 0.5rem);
 }
-
 form > .fields > .field.quarter {
   width: calc(25% - 0.375rem);
 }
@@ -468,27 +415,19 @@ form > .fields > .field.quarter {
     width: calc(100% + 3rem);
     margin: -1.5rem 0 2rem -1.5rem;
   }
-
   form > .fields > .field {
     padding: 1.5rem 0 0 1.5rem;
     width: calc(100% - 1.5rem);
   }
-
-  form > .fields > .field.half {
-    width: calc(100% - 1.5rem);
-  }
-
-  form > .fields > .field.third {
-    width: calc(100% - 1.5rem);
-  }
-
+  form > .fields > .field.half,
+  form > .fields > .field.third,
   form > .fields > .field.quarter {
     width: calc(100% - 1.5rem);
   }
 }
 
 label {
-  color: #580262;
+  color: #2c3e50;
   display: block;
   font-size: 1.2rem;
   font-weight: 600;
@@ -502,7 +441,6 @@ input[type="text"],
 input[type="password"],
 input[type="email"],
 input[type="tel"],
-select,
 textarea {
   -moz-appearance: none;
   -webkit-appearance: none;
@@ -526,7 +464,7 @@ textarea {
     background-color 0.2s ease-in-out;
   background-color: transparent;
   border-radius: 4px;
-  border: solid 2px #580262;
+  border: solid 2px #2c3e50;
   color: inherit;
   display: block;
   outline: 0;
@@ -539,7 +477,6 @@ input[type="text"]:invalid,
 input[type="password"]:invalid,
 input[type="email"]:invalid,
 input[type="tel"]:invalid,
-select:invalid,
 textarea:invalid {
   box-shadow: none;
 }
@@ -548,167 +485,37 @@ input[type="text"]:focus,
 input[type="password"]:focus,
 input[type="email"]:focus,
 input[type="tel"]:focus,
-select:focus,
 textarea:focus {
   background: rgba(255, 255, 255, 0.075);
-  border-color: #580262;
-  box-shadow: 0 0 0 1px #580262;
-}
-
-select {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' preserveAspectRatio='none' viewBox='0 0 40 40'%3E%3Cpath d='M9.4,12.3l10.4,10.4l10.4-10.4c0.2-0.2,0.5-0.4,0.9-0.4c0.3,0,0.6,0.1,0.9,0.4l3.3,3.3c0.2,0.2,0.4,0.5,0.4,0.9 c0,0.4-0.1,0.6-0.4,0.9L20.7,31.9c-0.2,0.2-0.5,0.4-0.9,0.4c-0.3,0-0.6-0.1-0.9-0.4L4.3,17.3c-0.2-0.2-0.4-0.5-0.4-0.9 c0-0.4,0.1-0.6,0.4-0.9l3.3-3.3c0.2-0.2,0.5-0.4,0.9-0.4S9.1,12.1,9.4,12.3z' fill='%23ffffff' /%3E%3C/svg%3E");
-  background-size: 1.25rem;
-  background-repeat: no-repeat;
-  background-position: calc(100% - 1rem) center;
-  height: 2.75rem;
-  padding-right: 2.75rem;
-  text-overflow: ellipsis;
-}
-
-select option {
-  color: #ffffff;
-  background: #1b1f22;
-}
-
-select:focus::-ms-value {
-  background-color: transparent;
-}
-
-select::-ms-expand {
-  display: none;
+  border-color: #2c3e50;
+  box-shadow: 0 0 0 1px #2c3e50;
 }
 
 input[type="text"],
 input[type="password"],
-input[type="email"],
-select {
+input[type="email"] {
   height: 2.75rem;
 }
-
 textarea {
   padding: 0.75rem 1rem;
-}
-
-input[type="checkbox"],
-input[type="radio"] {
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  -ms-appearance: none;
-  appearance: none;
-  display: block;
-  float: left;
-  margin-right: -2rem;
-  opacity: 0;
-  width: 1rem;
-  z-index: -1;
-}
-
-input[type="checkbox"] + label,
-input[type="radio"] + label {
-  text-decoration: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  color: #ffffff;
-  cursor: pointer;
-  display: inline-block;
-  font-size: 0.8rem;
-  font-weight: 300;
-  margin: 0 0 0.5rem 0;
-  padding-left: 2.65rem;
-  padding-right: 0.75rem;
-  position: relative;
-}
-
-input[type="checkbox"] + label:before,
-input[type="radio"] + label:before {
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  line-height: 1;
-  text-transform: none !important;
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-}
-
-input[type="checkbox"] + label:before,
-input[type="radio"] + label:before {
-  -moz-transition:
-    border-color 0.2s ease-in-out,
-    box-shadow 0.2s ease-in-out,
-    background-color 0.2s ease-in-out;
-  -webkit-transition:
-    border-color 0.2s ease-in-out,
-    box-shadow 0.2s ease-in-out,
-    background-color 0.2s ease-in-out;
-  -ms-transition:
-    border-color 0.2s ease-in-out,
-    box-shadow 0.2s ease-in-out,
-    background-color 0.2s ease-in-out;
-  transition:
-    border-color 0.2s ease-in-out,
-    box-shadow 0.2s ease-in-out,
-    background-color 0.2s ease-in-out;
-  border-radius: 4px;
-  border: solid 1px #ffffff;
-  content: "";
-  display: inline-block;
-  height: 1.65rem;
-  left: 0;
-  line-height: 1.65rem;
-  position: absolute;
-  text-align: center;
-  top: -0.15rem;
-  width: 1.65rem;
-}
-
-input[type="checkbox"]:checked + label:before,
-input[type="radio"]:checked + label:before {
-  background: #ffffff !important;
-  border-color: #ffffff !important;
-  color: #1b1f22;
-  content: "\f00c";
-}
-
-input[type="checkbox"]:focus + label:before,
-input[type="radio"]:focus + label:before {
-  background: rgba(255, 255, 255, 0.075);
-  border-color: #ffffff;
-  box-shadow: 0 0 0 1px #ffffff;
-}
-
-input[type="checkbox"] + label:before {
-  border-radius: 4px;
-}
-
-input[type="radio"] + label:before {
-  border-radius: 100%;
 }
 
 ::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.5) !important;
   opacity: 1;
 }
-
 :-moz-placeholder {
   color: rgba(255, 255, 255, 0.5) !important;
   opacity: 1;
 }
-
 ::-moz-placeholder {
   color: rgba(255, 255, 255, 0.5) !important;
   opacity: 1;
 }
-
 :-ms-input-placeholder {
   color: rgba(255, 255, 255, 0.5) !important;
   opacity: 1;
 }
-
 .formerize-placeholder {
   color: rgba(255, 255, 255, 0.5) !important;
   opacity: 1;
@@ -728,7 +535,6 @@ input[type="radio"] + label:before {
 .box > :last-child > :last-child > :last-child {
   margin-bottom: 0;
 }
-
 .box.alt {
   border: 0;
   border-radius: 0;
@@ -759,15 +565,12 @@ input[type="radio"] + label:before {
 .icon > .label {
   display: none;
 }
-
 .icon:before {
   line-height: inherit;
 }
-
 .icon.solid:before {
   font-weight: 900;
 }
-
 .icon.brands:before {
   font-family: "Font Awesome 5 Brands";
 }
@@ -800,23 +603,19 @@ input[type="radio"] + label:before {
   border-radius: 4px;
   display: block;
 }
-
 .image.left,
 .image.right {
   max-width: 40%;
 }
-
 .image.left img,
 .image.right img {
   width: 100%;
 }
-
 .image.left {
   float: left;
   padding: 0 1.5em 1em 0;
   top: 0.25em;
 }
-
 .image.right {
   float: right;
   padding: 0 0 1em 1.5em;
@@ -828,7 +627,6 @@ input[type="radio"] + label:before {
   margin: 0 0 2rem 0;
   width: 100%;
 }
-
 .image.fit img {
   width: 100%;
 }
@@ -838,7 +636,6 @@ input[type="radio"] + label:before {
   margin: 2.5rem 0;
   width: 100%;
 }
-
 .image.main img {
   width: 100%;
 }
@@ -862,7 +659,6 @@ ol {
   margin: 0 0 2rem 0;
   padding-left: 1.25em;
 }
-
 ol li {
   padding-left: 0.25em;
 }
@@ -872,7 +668,6 @@ ul {
   margin: 0 0 2rem 0;
   padding-left: 1em;
 }
-
 ul li {
   padding-left: 0.5em;
 }
@@ -881,29 +676,13 @@ ul.alt {
   list-style: none;
   padding-left: 0;
 }
-
 ul.alt li {
   border-top: solid 1px #ffffff;
   padding: 0.5em 0;
 }
-
 ul.alt li:first-child {
   border-top: 0;
   padding-top: 0;
-}
-
-dl {
-  margin: 0 0 2rem 0;
-}
-
-dl dt {
-  display: block;
-  font-weight: 600;
-  margin: 0 0 1rem 0;
-}
-
-dl dd {
-  margin-left: 2rem;
 }
 
 /* Actions */
@@ -948,7 +727,6 @@ ul.actions.stacked {
 ul.actions.stacked li {
   padding: 1.3rem 0 0 0;
 }
-
 ul.actions.stacked li:first-child {
   padding-top: 0;
 }
@@ -956,7 +734,6 @@ ul.actions.stacked li:first-child {
 ul.actions.fit {
   width: calc(100% + 1rem);
 }
-
 ul.actions.fit li {
   -moz-flex-grow: 1;
   -webkit-flex-grow: 1;
@@ -968,11 +745,9 @@ ul.actions.fit li {
   flex-shrink: 1;
   width: 100%;
 }
-
 ul.actions.fit li > * {
   width: 100%;
 }
-
 ul.actions.fit.stacked {
   width: 100%;
 }
@@ -986,7 +761,6 @@ ul.actions.fit.stacked {
     margin-left: 0;
     width: 100% !important;
   }
-
   ul.actions:not(.fixed) li {
     -moz-flex-grow: 1;
     -webkit-flex-grow: 1;
@@ -1000,15 +774,12 @@ ul.actions.fit.stacked {
     text-align: center;
     width: 100%;
   }
-
   ul.actions:not(.fixed) li > * {
     width: 100%;
   }
-
   ul.actions:not(.fixed) li:first-child {
     padding-top: 0;
   }
-
   ul.actions:not(.fixed) li input[type="submit"],
   ul.actions:not(.fixed) li input[type="reset"],
   ul.actions:not(.fixed) li input[type="button"],
@@ -1016,7 +787,6 @@ ul.actions.fit.stacked {
   ul.actions:not(.fixed) li .button {
     width: 100%;
   }
-
   ul.actions:not(.fixed) li input[type="submit"].icon:before,
   ul.actions:not(.fixed) li input[type="reset"].icon:before,
   ul.actions:not(.fixed) li input[type="button"].icon:before,
@@ -1033,19 +803,17 @@ ul.icons {
   list-style: none;
   padding-left: 0;
 }
-
 ul.icons li {
   display: inline-block;
   padding: 0 0.75em 0 0;
 }
-
 ul.icons li:last-child {
   padding-right: 0;
 }
 
 ul.icons li a {
   border-radius: 100%;
-  box-shadow: inset 0 0 0 1px #580262;
+  box-shadow: inset 0 0 0 1px #2c3e50;
   display: inline-block;
   height: 2.25rem;
   line-height: 2.25rem;
@@ -1056,77 +824,8 @@ ul.icons li a {
 ul.icons li a:hover {
   background-color: rgba(255, 255, 255, 0.075);
 }
-
 ul.icons li a:active {
   background-color: rgba(255, 255, 255, 0.175);
-}
-
-/* Table */
-
-.table-wrapper {
-  -webkit-overflow-scrolling: touch;
-  overflow-x: auto;
-}
-
-table {
-  margin: 0 0 2rem 0;
-  width: 100%;
-}
-
-table tbody tr {
-  border: solid 1px #ffffff;
-  border-left: 0;
-  border-right: 0;
-}
-
-table tbody tr:nth-child(2n + 1) {
-  background-color: rgba(255, 255, 255, 0.075);
-}
-
-table td {
-  padding: 0.75em 0.75em;
-}
-
-table th {
-  color: #ffffff;
-  font-size: 0.9em;
-  font-weight: 600;
-  padding: 0 0.75em 0.75em 0.75em;
-  text-align: left;
-}
-
-table thead {
-  border-bottom: solid 2px #ffffff;
-}
-
-table tfoot {
-  border-top: solid 2px #ffffff;
-}
-
-table.alt {
-  border-collapse: separate;
-}
-
-table.alt tbody tr td {
-  border: solid 1px #ffffff;
-  border-left-width: 0;
-  border-top-width: 0;
-}
-
-table.alt tbody tr td:first-child {
-  border-left-width: 1px;
-}
-
-table.alt tbody tr:first-child td {
-  border-top-width: 1px;
-}
-
-table.alt thead {
-  border-bottom: 0;
-}
-
-table.alt tfoot {
-  border-top: 0;
 }
 
 /* Button */
@@ -1135,75 +834,48 @@ input[type="submit"],
 input[type="reset"],
 input[type="button"],
 button,
-/* Stile base per tutti i tipi di pulsante */
-input[type="submit"],
-input[type="reset"],
-input[type="button"],
-button,
 .button {
   appearance: none;
-  /* Uniamo le transizioni in un'unica riga pulita */
   transition:
     background-size 0.3s ease-in-out,
     color 0.2s ease-in-out,
     filter 0.2s ease-in-out;
-
-  /* Gestione Sfondi: la linea viola (sopra) e il gradiente oro (sotto) */
   background-image:
-    linear-gradient(#580262, #580262),
-    linear-gradient(315deg, #e8ddcf 40%, #b49a75 60%);
+    linear-gradient(#2c3e50, #2c3e50),
+    linear-gradient(315deg, #40c0e0 40%, #ffffff 60%);
   background-position: bottom center;
   background-repeat: no-repeat;
-  /* La linea parte da 0% di larghezza, il fondo è 100% */
   background-size:
     0% 4px,
     100% 100%;
-
   border: 0;
   border-radius: 4px;
-  box-shadow: inset 0 0 0 2px #580262;
-  color: #580262 !important;
+  box-shadow: inset 0 0 0 2px #2c3e50;
+  color: #2c3e50 !important;
   cursor: pointer;
   display: inline-block;
   font-size: 0.8rem;
   font-weight: 600;
   height: 2.75rem;
-  line-height: 2.75rem;
+  line-height: calc(2.75rem - 2px);
   letter-spacing: 0.2rem;
   outline: 0;
-  padding: 0 1.3rem; /* Bilanciato */
+  padding: 0 1.3rem;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   white-space: nowrap;
 }
 
-/* Effetto Hover unico per tutti */
 input[type="submit"]:hover,
 input[type="reset"]:hover,
 input[type="button"]:hover,
 button:hover,
 .button:hover {
-  /* Espande la linea al 100% partendo dal centro */
   background-size:
     100% 4px,
     100% 100%;
   filter: brightness(1.05);
-}
-
-/* Correzione per il centraggio del testo specifica per i tag input */
-input[type="submit"],
-input[type="reset"],
-input[type="button"],
-button {
-  line-height: calc(2.75rem - 2px);
-}
-
-input[type="submit"]:hover,
-input[type="reset"]:hover,
-input[type="button"]:hover,
-button:hover,
-.button:hover {
   background-color: rgba(255, 255, 255, 0.075);
 }
 
@@ -1247,7 +919,7 @@ input[type="button"].primary,
 button.primary,
 .button.primary {
   background-color: #ffffff;
-  color: #580262 !important;
+  color: #2c3e50 !important;
   font-weight: 600;
 }
 
@@ -1264,13 +936,6 @@ button:disabled,
   pointer-events: none;
   cursor: default;
   opacity: 0.25;
-}
-
-input[type="submit"],
-input[type="reset"],
-input[type="button"],
-button {
-  line-height: calc(2.75rem - 2px);
 }
 
 /* BG */
@@ -1300,7 +965,6 @@ button {
   height: 100%;
 }
 
-/* Layer superiore: lo manteniamo per eventuali sfumature o effetti di caricamento */
 #bg:before {
   -moz-transition: background-color 2.5s ease-in-out;
   -webkit-transition: background-color 2.5s ease-in-out;
@@ -1310,16 +974,11 @@ button {
   -webkit-transition-delay: 0.75s;
   -ms-transition-delay: 0.75s;
   transition-delay: 0.75s;
-
-  /* --- MODIFICA QUI PER ELIMINARE L'ALONE --- */
   background-image: none !important;
   background-color: transparent;
-  /* ------------------------------------------ */
-
   z-index: 2;
 }
 
-/* Layer principale: Sostituiamo bg.jpg con un colore solido */
 #bg:after {
   -moz-transform: scale(1.125);
   -webkit-transform: scale(1.125);
@@ -1337,16 +996,17 @@ button {
   transition:
     transform 0.325s ease-in-out,
     filter 0.325s ease-in-out;
-
-  /* --- MODIFICA QUI --- */
-  background-image: linear-gradient(135deg, #e8ddcf 40%, #b49a75 60%);
-  background-color: #e8ddcf; /* Fallback */
-
+  background-image: linear-gradient(
+    135deg,
+    #ffffff 0%,
+    #ffffff 55%,
+    #40c0e0 90%,
+    #ff9a76 100%
+  );
+  background-color: #ffffff; /* Fallback di sicurezza */
   z-index: 1;
 }
 
-/* Quando l'articolo è visibile, il blur su un colore solido non si nota molto, 
-   ma manteniamo la struttura per coerenza del template */
 body.is-article-visible #bg:after {
   -moz-transform: scale(1.0825);
   -webkit-transform: scale(1.0825);
@@ -1355,10 +1015,10 @@ body.is-article-visible #bg:after {
   filter: blur(0.2rem);
 }
 
-/* Colore durante il caricamento iniziale */
 body.is-preload #bg:before {
   background-color: #000000;
 }
+
 /* Wrapper */
 
 #wrapper {
@@ -1395,13 +1055,11 @@ body.is-preload #bg:before {
     padding: 3rem 2rem;
   }
 }
-
 @media screen and (max-width: 736px) {
   #wrapper {
     padding: 2rem 1rem;
   }
 }
-
 @media screen and (max-width: 480px) {
   #wrapper {
     padding: 1rem;
@@ -1439,22 +1097,6 @@ body.is-preload #bg:before {
     transform 0.325s ease-in-out,
     filter 0.325s ease-in-out,
     opacity 0.325s ease-in-out;
-  /*background-image: -moz-radial-gradient(
-    rgba(0, 0, 0, 0.25) 25%,
-    rgba(0, 0, 0, 0) 55%
-  );
-  background-image: -webkit-radial-gradient(
-    rgba(0, 0, 0, 0.25) 25%,
-    rgba(0, 0, 0, 0) 55%
-  );
-  background-image: -ms-radial-gradient(
-    rgba(0, 0, 0, 0.25) 25%,
-    rgba(0, 0, 0, 0) 55%
-  );
-  background-image: radial-gradient(
-    rgba(0, 0, 0, 0.25) 25%,
-    rgba(0, 0, 0, 0) 55%
-  );*/
   max-width: 100%;
   text-align: center;
 }
@@ -1476,35 +1118,42 @@ body.is-preload #bg:before {
   left: calc(50% - 1px);
   width: 2px;
   height: calc(3.5rem + 1px);
-  background: #580262;
+  background: #2c3e50;
 }
 
 #header > :first-child {
   margin-top: 0;
 }
-
 #header > :first-child:before {
   display: none;
 }
 
+/* REGOLE PER FOTO PROFILO LOGO */
 #header .logo {
-  width: 5.5rem;
-  height: 5.5rem;
-  line-height: 5.5rem;
-  border: solid 2px #580262;
-  border-radius: 100%;
-  background: linear-gradient(315deg, #e8ddcf 40%, #b49a75 60%);
+  width: 10rem;
+  height: 10rem;
+  border: solid 2px #022f62;
+  border-radius: 50%;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-#header .logo .icon:before {
-  font-size: 2rem;
+#header .logo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 25% center;
+  display: block;
 }
 
 #header .content {
   border-style: solid;
-  border-color: #580262;
-  border-top-width: 3px;
-  border-bottom-width: 3px;
+  border-color: #2c3e50;
+  border-top-width: 6px;
+  border-bottom-width: 6px;
   max-width: 100%;
 }
 
@@ -1553,14 +1202,14 @@ body.is-preload #bg:before {
   margin-bottom: 0;
   list-style: none;
   padding-left: 0;
-  border: solid 3px #580262;
+  border: solid 3px #2c3e50;
   border-radius: 4px;
 }
 
 #header nav ul li {
   padding-left: 0;
-  border-left: solid 1px #580262;
-  background: linear-gradient(315deg, #e8ddcf 40%, #b49a75 60%);
+  border-left: solid 1px #2c3e50;
+  background: linear-gradient(315deg, #ffffff 40%, #40c0e0 100%);
 }
 
 #header nav ul li:first-child {
@@ -1572,37 +1221,34 @@ body.is-preload #bg:before {
   min-width: 7.25rem;
   height: 2.75rem;
   line-height: 2.75rem;
-  padding: 0; /* Portiamo il padding a 0 per avere il controllo totale */
-  text-align: center; /* Centriamo il testo */
+  padding: 0;
+  text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   font-size: 0.7rem;
   border-bottom: 0;
   position: relative;
-  box-sizing: border-box; /* Forza il calcolo corretto delle dimensioni */
+  box-sizing: border-box;
 }
-/* Crea la linea (nascosta di base) */
+
 #header nav ul li a:after {
   content: "";
   position: absolute;
-  bottom: 0; /* Attaccata al bordo inferiore */
-  left: 50%; /* Parte dal centro */
-  width: 0; /* Larghezza zero */
-  height: 3px; /* Spessore linea */
-  background-color: #580262; /* Il tuo colore */
-  transition: all 0.3s ease-in-out; /* Velocità movimento */
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 3px;
+  background-color: #2c3e50;
+  transition: all 0.3s ease-in-out;
 }
 
-/* Fa apparire la linea al passaggio del mouse */
 #header nav ul li a:hover:after {
-  width: 100%; /* Si allunga su tutto il tasto */
-  left: 0; /* Si sposta a sinistra per coprire tutto */
+  width: 100%;
+  left: 0;
 }
-
 #header nav ul li a:hover {
   background-color: rgba(255, 255, 255, 0.075);
 }
-
 #header nav ul li a:active {
   background-color: rgba(255, 255, 255, 0.175);
 }
@@ -1615,7 +1261,7 @@ body.is-preload #bg:before {
   left: calc(50% - 1px);
   width: 1px;
   height: 100%;
-  background: #580262;
+  background: #2c3e50;
 }
 
 #header nav.use-middle ul li.is-middle {
@@ -1644,7 +1290,6 @@ body.is-preload #header {
 body.is-preload #header > * {
   opacity: 0;
 }
-
 body.is-preload #header .content .inner {
   max-height: 0;
   padding-top: 0;
@@ -1662,26 +1307,21 @@ body.is-preload #header .content .inner {
   #header > * {
     margin-top: 2rem;
   }
-
   #header > *:before {
     top: calc(-2rem - 1px);
     height: calc(2rem + 1px);
   }
-
   #header .logo {
     width: 4.75rem;
     height: 4.75rem;
     line-height: 4.75rem;
   }
-
   #header .logo .icon:before {
     font-size: 1.75rem;
   }
-
   #header .content .inner {
     padding: 2.5rem 1rem;
   }
-
   #header .content p {
     line-height: 1.875;
   }
@@ -1691,11 +1331,9 @@ body.is-preload #header .content .inner {
   #header {
     padding: 1.5rem 0;
   }
-
   #header .content .inner {
     padding: 2.5rem 0;
   }
-
   #header nav ul {
     -moz-flex-direction: column;
     -webkit-flex-direction: column;
@@ -1704,23 +1342,19 @@ body.is-preload #header .content .inner {
     min-width: 10rem;
     max-width: 100%;
   }
-
   #header nav ul li {
     border-left: 0;
     border-top: solid 1px #ffffff;
   }
-
   #header nav ul li:first-child {
     border-top: 0;
   }
-
   #header nav ul li a {
     height: 3rem;
     line-height: 3rem;
     min-width: 0;
     width: 100%;
   }
-
   #header nav.use-middle:after {
     display: none;
   }
@@ -1782,12 +1416,12 @@ body.is-preload #header .content .inner {
   background-color: transparent;
   border-radius: 4px;
   opacity: 0;
-  max-height: 80vh; /* L'articolo non può superare l'80% dell'altezza dello schermo */
-  overflow-y: auto; /* Se il testo è lungo, appare la scrollbar solo qui dentro */
+  max-height: 80vh;
+  overflow-y: auto;
   margin-top: 10vh;
-  -webkit-overflow-scrolling: touch; /* Rende lo scroll fluido su smartphone */
-  display: flex; /* Aiuta a gestire meglio il contenuto interno */
-  flex-direction: column; /* Allinea i testi correttamente */
+  -webkit-overflow-scrolling: touch;
+  display: flex;
+  flex-direction: column;
 }
 
 #main article.active {
@@ -1833,7 +1467,6 @@ body.is-preload #header .content .inner {
 #main article .close:hover:before {
   background-color: rgba(255, 255, 255, 0.075);
 }
-
 #main article .close:active:before {
   background-color: rgba(255, 255, 255, 0.175);
 }
@@ -1842,7 +1475,6 @@ body.is-preload #header .content .inner {
   #main article {
     padding: 3.5rem 2rem 0.5rem 2rem;
   }
-
   #main article .close:before {
     top: 0.875rem;
     left: 0.875rem;
@@ -1906,16 +1538,19 @@ body.is-article-visible #footer {
 body.is-preload #footer {
   opacity: 0;
 }
+
+/* Top Header */
+
 .top-header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  padding: 2rem; /* Distanza dai bordi */
+  padding: 2rem;
   display: flex;
-  justify-content: space-between; /* Spinge i due nomi agli opposti */
-  z-index: 10000; /* Lo tiene sopra a tutto */
-  pointer-events: none; /* Evita che cliccando sopra i nomi si blocchi il sito */
+  justify-content: space-between;
+  z-index: 10000;
+  pointer-events: none;
 }
 
 .top-header .nome,
@@ -1923,6 +1558,6 @@ body.is-preload #footer {
   font-size: 1.7rem;
   font-weight: bold;
   letter-spacing: 0.3rem;
-  color: #580262;
+  color: #2c3e50;
   text-transform: uppercase;
 }
