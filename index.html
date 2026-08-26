@@ -29,7 +29,10 @@
       <header id="header">
         <div class="logo">
           <!-- Qui c'è la tua foto al posto dell'icona -->
-          <img src="foto sito1.webp" alt="Mia foto profilo" />
+          <img
+            src="foto sito1.webp"
+            alt="Fotografia titolare del sito portfolio, sta sorridendo"
+          />
         </div>
         <div class="content">
           <div class="inner">
@@ -55,35 +58,57 @@
         <!-- I miei studi -->
         <article id="intro">
           <h2 class="major">I miei studi</h2>
-          <span class="image main"
-            ><img
-              src="immagine generata presentazione.png"
-              alt="Immagine di presentazione"
-          /></span>
-          <p>
-            Sono uno studente del corso di Laurea Magistrale in Digital
-            Humanities presso l'Università degli Studi di Palermo. Il mio
-            percorso unisce l'interesse per le discipline umanistiche con le
-            potenzialità che le nuove frontiere della tecnologia offrono.
-            Posseggo una laurea in Lettere Moderne presso l'Alma Mater Studiorum
-            di Bologna, per cui, per me non conta solamente sapere leggere i
-            dati, quanto saperli interpretare. Scoprire, conoscere,
-            padroneggiare. Ho sempre imparato a fare le cose da me, per cui
-            delegare passivamente ad una macchina non è ciò che mi si addice.
-            Per questo motivo, ho deciso di intraprendere un percorso di studi
-            che mi permettesse di acquisire competenze nel campo della Data
-            Science e della linguistica computazionale, con l'obiettivo di
-            diventare un Digital Humanist capace di affrontare le sfide del
-            mondo digitale in modo critico e consapevole.
-          </p>
+          <div class="about-flex-container">
+            <div class="about-image">
+              <span class="image main"
+                ><img
+                  src="Daniele 1.webp"
+                  alt="Immagine decorativa che illustra una mente umana in cui coincidono materie umanistiche e digitali "
+                  id="fotosezione1"
+                />
+              </span>
+              <p>
+                Sono uno studente del corso di Laurea Magistrale in Digital
+                Humanities presso l'Università degli Studi di Palermo. Il mio
+                percorso unisce l'interesse per le discipline umanistiche con le
+                potenzialità che le nuove frontiere della tecnologia offrono.
+                Posseggo una laurea in Lettere Moderne presso l'Alma Mater
+                Studiorum di Bologna, per cui, per me non conta solamente sapere
+                leggere i dati, quanto saperli interpretare. Scoprire,
+                conoscere, padroneggiare. Ho sempre imparato a fare le cose da
+                me, per cui delegare passivamente ad una macchina non è ciò che
+                mi si addice. Per questo motivo, ho deciso di intraprendere un
+                percorso di studi che mi permettesse di acquisire competenze nel
+                campo della Data Science e della linguistica computazionale, con
+                l'obiettivo di diventare un Digital Humanist capace di
+                affrontare le sfide del mondo digitale in modo critico e
+                consapevole.
+              </p>
+            </div>
+          </div>
         </article>
 
         <!-- Forma mentis -->
         <article id="work">
-          <h2 class="major">Skills</h2>
-          <span class="image main"
-            ><img src="images/pic02.jpg" alt="Immagine hobby"
-          /></span>
+          <div
+            style="
+              display: flex;
+              justify-content: flex-start;
+              align-items: center;
+              gap: 2rem;
+              margin-bottom: 2rem;
+            "
+          >
+            <h2 class="major" style="margin-bottom: 0">Skills</h2>
+            <span class="image trasparente" style="margin: 0">
+              <!-- Ho spostato il comando width qui dentro: -->
+              <img
+                src="skills.png"
+                alt="immagine decorativa che illustra delle matite da cui sbocciano fiori"
+                style="width: 250px; height: auto"
+              />
+            </span>
+          </div>
           <h3>🪶 Scrittura e Profilo Umanistico</h3>
           <div class="skill-tags">
             <span class="skill-tag">Alta Abilità di Scrittura</span>
@@ -128,11 +153,14 @@
           </div>
         </article>
 
-        <!-- Cosa so fare -->
+        <!-- Progetti -->
         <article id="about">
-          <h2 class="major">Cosa so fare</h2>
-          <span class="image main"
-            ><img src="images/pic03.jpg" alt="Immagine competenze"
+          <h2 class="major">Progetti</h2>
+          <span class="image main trasparente"
+            ><img
+              src="progetti.png"
+              alt="immagine decorativa che illustra delle mani che disegnano"
+              id="progetti"
           /></span>
           <p>
             Durante il mio percorso accademico e i miei progetti personali, ho
@@ -145,6 +173,12 @@
         <!-- Contattami -->
         <article id="contact">
           <h2 class="major">Contattami</h2>
+          <span class="image main trasparente"
+            ><img
+              src="contatti.png"
+              alt="immagine decorativa che illustra varie mani che tengono in aria dei telefoni"
+              id="contatti"
+          /></span>
           <form method="post" action="#">
             <div class="fields">
               <div class="field half">
@@ -169,18 +203,27 @@
           </form>
           <ul class="icons">
             <li>
-              <a href="#" class="icon brands fa-github"
+              <a
+                href="https://github.com/Daniele-Rizzo-2000/Daniele-Rizzo-2000.github.io"
+                class="icon brands fa-github"
+                target="_blank"
                 ><span class="label">GitHub</span></a
               >
             </li>
             <li>
-              <a href="#" class="icon brands fa-linkedin"
+              <a
+                href="https://www.linkedin.com/in/daniele-rizzo-22a465431/"
+                class="icon brands fa-linkedin"
+                target="_blank"
                 ><span class="label">LinkedIn</span></a
               >
             </li>
             <li>
-              <a href="#" class="icon brands fa-instagram"
-                ><span class="label">Instagram</span></a
+              <a
+                href="https://wa.me/393920269596"
+                class="icon brands fa-whatsapp"
+                target="_blank"
+                ><span class="label">WhatsApp</span></a
               >
             </li>
           </ul>
@@ -190,8 +233,12 @@
       <!-- Footer -->
       <footer id="footer">
         <p class="copyright">
-          &copy; Daniele Rizzo. Design:
-          <a href="https://html5up.net">HTML5 UP</a>.
+          &copy; Daniele Rizzo. Illustrazioni a cura di
+          <a
+            href="https://www.instagram.com/lavandulaselvatica/"
+            target="_blank"
+            >Giulia Oliva</a
+          >. Design: <a href="https://html5up.net" target="_blank">HTML5 UP</a>.
         </p>
       </footer>
     </div>
