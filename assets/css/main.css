@@ -1659,14 +1659,47 @@ blockquote {
     padding: 1.2rem 1.5rem;
   }
 
+  #wrapper:before {
+    display: none !important;
+  }
+
+  #wrapper:after {
+    display: none !important;
+  }
+
+  #wrapper {
+    height: 100dvh !important;
+    min-height: 100dvh !important;
+    max-height: 100dvh !important;
+    padding: 1.8rem 1rem 0.6rem 1rem !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    overflow: hidden !important;
+  }
+
+  .top-header {
+    top: 0;
+    padding: 0.5rem 1.2rem !important; /* Sposta DANIELE / RIZZO a filo bordo */
+  }
+
   .top-header .nome,
   .top-header .cognome {
     font-size: 1.15rem;
     letter-spacing: 0.15rem;
   }
+
+  #header .content .inner {
+    padding: 0.5rem 1rem !important;
+  }
   #header .logo {
-    width: 10rem;
-    height: 10rem;
+    width: 7.5rem;
+    height: 7.5rem;
+  }
+
+  #header nav {
+    margin-bottom: 0 !important;
   }
 
   #header nav ul {
@@ -1680,6 +1713,12 @@ blockquote {
     line-height: 3rem;
     font-size: 0.85rem;
     letter-spacing: 0.15rem;
+  }
+
+  #footer {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding: 0 !important;
   }
 
   #intro #fotosezione1 {
@@ -1700,5 +1739,33 @@ blockquote {
   #work > div:first-child {
     flex-wrap: wrap;
     gap: 1rem !important;
+  }
+  .flex-container {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 1rem !important;
+    width: 100% !important;
+  }
+
+  .flex-item {
+    min-width: 100% !important;
+    padding: 1.2rem 1.2rem !important;
+    box-sizing: border-box !important;
+  }
+
+  .flex-item h3 {
+    font-size: 0.95rem !important;
+    margin-bottom: 0.4rem !important;
+    letter-spacing: 0.15rem !important;
+  }
+
+  .flex-item p {
+    font-size: 0.8rem !important;
+    line-height: 1.4 !important;
+    margin-bottom: 0.8rem !important;
+  }
+
+  .project-link {
+    font-size: 0.75rem !important;
   }
 }
