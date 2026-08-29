@@ -1654,3 +1654,51 @@ blockquote {
 .flex-item p {
   text-align: left !important;
 }
+@media screen and (max-width: 736px) {
+  .top-header {
+    padding: 1.2rem 1.5rem;
+  }
+
+  .top-header .nome,
+  .top-header .cognome {
+    font-size: 1.15rem;
+    letter-spacing: 0.15rem;
+  }
+  #header .logo {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  #header nav ul {
+    min-width: 14rem;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  #header nav ul li a {
+    height: 3.5rem;
+    line-height: 3.5rem;
+    font-size: 0.85rem;
+    letter-spacing: 0.15rem;
+  }
+
+  #intro #fotosezione1 {
+    float: none;
+    width: 100%;
+    max-width: 260px;
+    margin: 0 auto 1.5rem auto;
+  }
+
+  #progetti,
+  #contatti {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    object-fit: contain;
+  }
+
+  #work > div:first-child {
+    flex-wrap: wrap;
+    gap: 1rem !important;
+  }
+}
