@@ -27,10 +27,41 @@
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://Daniele-Rizzo-2000.github.io" />
+
+    <!-- PRECONNECT E FONT ASINCRONI -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Google Fonts asincrono -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600&display=swap"
+      media="print"
+      onload="this.media = 'all'"
+    />
+
+    <!-- FontAwesome asincrono -->
+    <link
+      rel="stylesheet"
+      href="assets/css/fontawesome-all.min.css"
+      media="print"
+      onload="this.media = 'all'"
+    />
+
+    <!-- Fallback per chi ha JavaScript disabilitato -->
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600&display=swap"
+      />
+      <link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
+    </noscript>
+
+    <!-- CARICAMENTO DEL TUO CSS -->
     <link rel="stylesheet" href="assets/css/main.css" />
-    <noscript
-      ><link rel="stylesheet" href="assets/css/noscript.css"
-    /></noscript>
+    <noscript>
+      <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
   </head>
   <body class="is-preload">
     <div class="top-header">
