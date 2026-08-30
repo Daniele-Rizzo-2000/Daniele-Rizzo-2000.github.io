@@ -1803,3 +1803,14 @@ blockquote {
     margin-bottom: 2vh !important;
   }
 }
+.flex-item a,
+#progetti a {
+  border-bottom-color: #2c3e50 !important;
+}
+
+/* Stato in hover (quando ci passi sopra col mouse) */
+.flex-item a:hover,
+#progetti a:hover {
+  border-bottom-color: #2c3e50 !important;
+  border-bottom-width: 3px !important;
+}
