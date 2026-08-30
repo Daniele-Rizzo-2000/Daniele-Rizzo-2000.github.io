@@ -1790,3 +1790,7 @@ blockquote {
     min-width: 0 !important;
   }
 }
+@font-face {
+  font-family: "Font Awesome 5 Brands";
+  font-display: swap;
+}
