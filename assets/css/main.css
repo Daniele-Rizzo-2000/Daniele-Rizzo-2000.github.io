@@ -1794,3 +1794,12 @@ blockquote {
   font-family: "Font Awesome 5 Brands";
   font-display: swap;
 }
+@media screen and (max-width: 736px) {
+  #main article {
+    max-height: calc(100dvh - 6rem) !important;
+    overflow-y: auto !important;
+    -webkit-overflow-scrolling: touch;
+    margin-top: 2vh !important;
+    margin-bottom: 2vh !important;
+  }
+}
